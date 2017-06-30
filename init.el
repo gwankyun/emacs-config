@@ -30,7 +30,7 @@
 
 (recentf-mode 1) ; keep a list of recently opened files
 
-;; set F7 to list recently opened file
-(global-set-key (kbd "<f7>") 'recentf-open-files)
+;; set F2 to list recently opened file
+(global-set-key (kbd "<f2>") 'recentf-open-files)
 
 (global-linum-mode t) ; 行號
