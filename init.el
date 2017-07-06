@@ -25,7 +25,7 @@
 
 (add-hook 'after-init-hook 'global-company-mode) ; 全局補全
 
-(load "~/.emacs.d/elpa/dash-20170207.2056/dash.el")
+(load "~/.emacs.d/elpa/dash-20170613.151/dash.el")
 (load "~/.emacs.d/elpa/tuareg-20170531.557/tuareg-site-file.el")
 
 (recentf-mode 1) ; keep a list of recently opened files
