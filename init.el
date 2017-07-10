@@ -19,6 +19,10 @@
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "Consolas" :foundry "outline" :slant normal :weight normal :height 158 :width normal)))))
 
+;; 設置字符編碼
+(set-language-environment "UTF-8")
+
+;; 設置包
 (setq package-archives '(("gnu"   . "http://elpa.emacs-china.org/gnu/")
 			 ("melpa" . "http://elpa.emacs-china.org/melpa/")))
 
@@ -50,6 +54,9 @@
   "s" 'save-buffer
   "z" 'save-buffers-kill-terminal
   "<SPC>" 'ace-jump-mode
+  "1" 'delete-other-windows
+  "2" 'split-window-below
+  "3" 'split-window-right
   )
 
 ;; evil-nerd-commenter
