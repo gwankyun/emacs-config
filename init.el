@@ -11,7 +11,9 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (ace-jump-mode evil-nerd-commenter evil-leader tuareg dash company sml-mode evil))))
+    (tabbar sr-speedbar ace-jump-mode evil-nerd-commenter evil-leader tuareg dash company sml-mode evil)))
+ '(sr-speedbar-default-width 20)
+ '(sr-speedbar-max-width 30))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -71,5 +73,12 @@
   "."  'evilnc-copy-and-comment-operator
   "\\" 'evilnc-comment-operator ; if you prefer backslash key
 )
+
+;; speedbar
+(require 'sr-speedbar);;这句话是必须的
+;; (add-hook 'after-init-hook '(lambda () (sr-speedbar-toggle)));;开启程序即启用
+
+;; tabbar
+(tabbar-mode 1)
 
 ;; 語言相關
